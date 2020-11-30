@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditAlbumActivity">
+
+    <TextView
+        android:id="@+id/editAlbumTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:text="@string/edit_song"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editAlbumTitleET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="105dp"
+        android:ems="10"
+        android:hint="Enter Album Title"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editAlbumTxt" />
+
+    <EditText
+        android:id="@+id/editReleaseET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="105dp"
+        android:ems="10"
+        android:hint="Enter Release Date"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editAlbumTitleET" />
+
+    <Button
+        android:id="@+id/editAlbumBtn"
+        android:layout_width="211dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:text="UPDATE ALBUM"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editReleaseET" />
+
+    <Button
+        android:id="@+id/editAlbumBackBtn"
+        android:layout_width="215dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editAlbumBtn"
+        app:layout_constraintVertical_bias="0.003" />
+</androidx.constraintlayout.widget.ConstraintLayout>

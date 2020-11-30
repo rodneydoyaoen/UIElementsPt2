@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/show_songs"
+        android:title = "Songs">
+    </item>
+    <item android:id="@+id/show_albums"
+        android:title = "Album">
+    </item>
+    <item android:id="@+id/show_que"
+        android:title= "Queue"
+        app:showAsAction="ifRoom">
+    </item>
+    <item android:id="@+id/add_songs"
+        android:title= "Add Song">
+    </item>
+    <item android:id="@+id/add_album"
+        android:title= "Add Album"
+        app:showAsAction="ifRoom">
+    </item>
+</menu>
